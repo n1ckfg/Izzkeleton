@@ -14,7 +14,7 @@ PVector[] simpleOpenNiPos = new PVector[osceletonNames.length];
 PVector[] simpleOpenNiPos_proj = new PVector[osceletonNames.length];
 
 void setupUser(){
-  context = new SimpleOpenNI(this);
+  context = new SimpleOpenNI(this,SimpleOpenNI.RUN_MODE_MULTI_THREADED);
   context.setMirror(true);
    
   // enable depthMap generation 
